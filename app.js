@@ -8,7 +8,7 @@ function Book (title, author, isbn) {
 // UI Constructor function - functionalilty (methods) will go on the prototype object. 
 function UI () {}
 
-// AddBookToList method created on the prototype 
+// AddBookToList method - created on the prototype 
 UI.prototype.addBookToList = function(book){
    const list = document.getElementById('book-list');
    // Create a table row and add it dynamically to the table.
@@ -22,6 +22,7 @@ UI.prototype.addBookToList = function(book){
    // This adds the row dynamically to the table. 
    list.appendChild(row);
 }
+console.log(UI.prototype);
 // Show alert
 UI.prototype.showAlert = function(message, className) {
    // Create a div 
